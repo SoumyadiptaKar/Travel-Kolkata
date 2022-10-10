@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="book.js"></script>
+
+  </head>
+  <body>
+  <form>
+    <body>
+      <img src="Images/menu.png" class="menu-icon" onclick="toggleSidebar(this)">
+    </div>
+
+    <div id="sidebar">
+    <div class="toggle-btn" onclick="toggleSidebar(this)"></div>
+    <div class="list">
+    <div class="item"><a class="item" href="K.html">Home</a></div>
+    <div class="item"><a class="item" href="about.html">About</a></div>
+    <div class="item"><a class="item" href="heritage.html">Heritage</a></div>
+    <div class="item"><a class="item" href="gal.html">Gallery</a></div>
+    <div class="item"><a class="item" href="Book.html">Bookings</a></div>
+    </div>
+    </div>
+<div class="booking">
+  <div class="title">
+    <h1>Booking A Trip</h1>
+  </div>
+
+
+    <div class="form-items">
+      <label for="fname">FIRST NAME</label>
+      <input type="text" id="fnamecheck" placeholder="First Name(30 char max,no numbers allowed)"
+          onkeyup="validation()">
+    </div>
+
+    <div class="form-items">
+      <label for="fname">LAST NAME</label>
+      <input type="text" id="lnamecheck"  placeholder="Last Name(30 char max,no numbers allowed)"
+      onkeyup="validation()">
+    </div>
+    <div class="form-items">
+      <label for="dob">DATE OF BIRTH</label>
+      <input type="date" name="">
+    </div>
+    <div class="form-items">
+      <label for="mail">EMAIL ID</label>
+      <input type="email" name="">
+    </div>
+    <div class="form-items">
+      <label for="pno">PHONE NUMBER</label>
+      <input type="number" id="pno" placeholder="10 digit number" onkeyup="validation()">
+
+    </div>
+    <div class="form-items">
+      <div class="gender ">
+        <label for="">GENDER</label>
+        <br>
+        Male
+        <input type="radio" name="gender" value="male">
+        <br>
+        Female
+        <input type="radio" name="gender" value="female">
+        <br>
+        Other
+        <input type="radio" name="gender" value="other">
+      </div>
+      </div>
+    <div class="form-items">
+      <label for="add">ADDRESS</label>
+      <input type="text" name="" value="" placeholder="Enter your address here">
+    </div>
+    <div class="form-items">
+      <label for="city">CITY</label>
+      <input type="text" id="cityc" placeholder="max 30 characters"
+      onkeyup="validation()">
+    </div>
+    <div class="form-items">
+      <label for="pcode">PIN CODE</label>
+      <input type="number" id="pin" placeholder="6 digit number"
+      onkeyup="validation()">
+    </div>
+    <div class="form-items">
+      <label for="state">STATE</label>
+      <input type="text" id="statec" placeholder="max 30 characters"
+      onkeyup="validation()">
+    </div>
+    <div class="form-items">
+      <label for="country">COUNTRY</label>
+      <input type="text" name="" value="">
+    </div>
+    <div class="form-items">
+      <label for="data"></label>
+      <p>Click "Choose File to upload your Identity Proof:"</p>
+      <input class="data" type="file" name="" value="">
+        </div>
+
+  </div>
+
+  <div class="btn">
+    Submit
+    <i class="fas fa-arrow-right"></i>
+  </div>
+
+
+  <div class="social-icons">
+    <div class="facebook">
+      <i class="fab fa-facebook-f"></i>
+    </div>
+    <div class="twitter">
+      <i class="fab fa-twitter"></i>
+    </div>
+    <div class="google">
+      <i class="fab fa-google-plus-g"></i>
+    </div>
+  </div>
+
+</div>
+
+  </form>
+  <br><br>
+  <div class="btn">
+    Reset
+  </div>
+  <script type="text/javascript">
+  function toggleSidebar(ref){
+  document.getElementById("sidebar").classList.toggle('active');
+  }
+  </script>
+
+  </body>
+</html>

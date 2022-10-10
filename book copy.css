@@ -1,0 +1,173 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+  background: #7f7df9;
+}
+
+.booking{
+
+  width: 650px;
+  height: 680px;
+  background: #fff;
+  padding: 30px;
+  margin: 100px auto;
+  border-radius: 30px;
+  position: relative;
+}
+
+.title h1{
+  color: #535274;
+  letter-spacing: 5px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.form,
+.form-items{
+  width: 90%;
+  padding: 10px;
+}
+.data{
+  position: absolute;
+  width: 50%;
+  display: flex;
+  height: 55px;
+  left: 40px
+}
+input {
+  width: 70%;
+  height:15px;
+  position: absolute;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  right: -10px;
+  outline: none;
+  margin-bottom: 12px;
+  border-radius: 30px;
+  background: #ebeef1;
+  border: 0px;
+}
+
+.btn{
+  background: #827ffe;
+  text-align: center;
+  color: #fff;
+  padding: 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%;
+}
+.reset{
+  background: #827ffe;
+  text-align: center;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%;
+  padding-bottom: 12px;
+  font-size: 16px;
+  bottom: 20px;
+}
+
+.btn .fas{
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.form-items{
+  position: relative;
+}
+
+.form-items .fas{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #9a99aa;
+}
+#sidebar {
+  position: absolute;
+  top: 100px;
+  right: -200px;
+  width: 200px;
+  height: 100%;
+  background: #151719;
+  transition: all 300ms linear;
+}
+
+#sidebar.active {
+  right: 0px;
+}
+
+#sidebar .toggle-btn {
+  position: absolute;
+  left: 220px;
+  top: 10px;
+}
+
+#sidebar div.list .item {
+  padding: 15px 10px;
+  border-bottom: 1px solid #444;
+  color: #fcfcfc;
+  text-transform: uppercase;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+#sidebar div.list .item:hover{
+  color: #ff6600;
+  background: #444;
+  transition: all 0.2s ease;
+}
+.menu-icon {
+  position: absolute;
+  top: 65px;
+  right: 50px;
+  width: 30px;
+  cursor: pointer;
+  margin-left: 40px;
+  background-color: black;
+  border-radius: 50%
+}
+
+.social-icons{
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  width: 200px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icons div{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.social-icons div .fab{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+}
+
+.social-icons div.facebook{
+  background: #5178d9;
+}
+
+.social-icons div.twitter{
+  background: #41caf6;
+}
+
+.social-icons div.google{
+  background: #fb4f4f;
+}

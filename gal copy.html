@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gallery</title>
+    <style media="screen">
+      body {
+  background-color: #f1f1f1;
+  padding: 25px;
+  font-family: Arial;
+}
+
+      .content {
+        padding:20px;
+        background-color: white;
+
+      }
+      .row:after {
+        display: table;
+        clear: both;
+      }
+
+      h1{
+        text-align:center;
+      }
+      .column {
+        float: center;
+        width: 100%;
+        padding:10px;
+        flex:50%;
+      }
+      #sidebar {
+        position: absolute;
+        top: 100px;
+        right: -200px;
+        width: 200px;
+        height: 100%;
+        background: #151719;
+        transition: all 300ms linear;
+      }
+
+      #sidebar.active {
+        right: 0px;
+      }
+
+      #sidebar .toggle-btn {
+        position: absolute;
+        left: 220px;
+        top: 10px;
+      }
+
+      #sidebar div.list .item {
+        padding: 15px 10px;
+        border-bottom: 1px solid #444;
+        color: #fcfcfc;
+        text-transform: uppercase;
+        font-size: 15px;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      #sidebar div.list .item:hover{
+        color: #ff6600;
+        background: #444;
+        transition: all 0.2s ease;
+      }
+      .menu-icon {
+        position: absolute;
+        top: 65px;
+        right: 50px;
+        width: 30px;
+        cursor: pointer;
+        margin-left: 40px;
+        background-color: black;
+        border-radius: 50%
+      }
+    </style>
+  </head>
+  <body>
+      <h1>Welcome To Gallery</h1>
+      <img src="Images/menu.png" class="menu-icon" onclick="toggleSidebar(this)">
+      <div id="sidebar">
+    <div class="toggle-btn" onclick="toggleSidebar(this)"></div>
+    <div class="list">
+      <div class="item"><a class="item" href="K.html">Home</a></div>
+      <div class="item"><a class="item" href="about.html">About</a></div>
+      <div class="item"><a class="item" href="Heritage.html">Heritage</a></div>
+      <div class="item"><a class="item" href="gal.html">Gallery</a></div>
+      <div class="item"><a class="item" href="Book.html">Bookings</a></div>
+    </div>
+  </div>
+    <div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="https://source.unsplash.com/Y3dBgaI1dWQ"  style="width:100%">
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+      <img src="https://source.unsplash.com/DKEtvrVYdzA" style="width:100%">
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+      <img src="https://source.unsplash.com/YkbPqaFr9LA"  style="width:100%">
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+      <img src="https://source.unsplash.com/U00LEd6B9PA" style="width:100%">
+    </div>
+  </div>
+
+
+<div class="column">
+  <div class="content">
+    <img src="https://source.unsplash.com/0hgKC_v1aAY"  style="width:100%">
+  </div>
+</div>
+
+<div class="column">
+  <div class="content">
+    <img src="https://source.unsplash.com/7lFcsIVE3sc"  style="width:100%">
+  </div>
+</div>
+<div class="column">
+  <div class="content">
+    <img src="https://source.unsplash.com/PNd98-zAnU0"  style="width:100%">
+  </div>
+</div>
+<div class="column">
+  <div class="content">
+    <img src="https://source.unsplash.com/gPgasylXfRU"  style="width:100%">
+  </div>
+</div>
+
+<div class="column">
+  <div class="content">
+    <img src="https://source.unsplash.com/uVbRO2e9w4k"  style="width:100%">
+  </div>
+</div>
+
+<div class="column">
+  <div class="content">
+    <img src="https://source.unsplash.com/7i7NgMk7dCs"  style="width:100%">
+  </div>
+</div>
+
+<div class="column">
+  <div class="content">
+    <img src="https://source.unsplash.com/42r6BAA0LzU"  style="width:100%">
+  </div>
+</div>
+
+<div class="column">
+  <div class="content">
+    <img src="https://source.unsplash.com/vv7mI_ci-UQ"  style="width:100%">
+  </div>
+</div>
+
+<div class="column">
+  <div class="content">
+    <img src="https://source.unsplash.com/nO4rTV598X4"  style="width:100%">
+  </div>
+</div>
+
+<div class="column">
+  <div class="content">
+    <img src="https://source.unsplash.com/k-1UDqnAb7Q"  style="width:100%">
+  </div>
+</div>
+<div class="column">
+  <div class="content">
+    <img src="https://images.financialexpress.com/2016/10/bengali-reu-L.jpg" style="width:100%">
+  </div>
+</div>
+<div class="column">
+  <div class="content">
+    <img src="https://www.pipbroadcast.com/wp-content/uploads/2017/06/bengali-wedding-photography-kolkata.jpg"  style="width:100%">
+  </div>
+</div>
+
+<div class="column">
+  <div class="content">
+    <img src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2020/05/31/Pictures/police-personnel-wearing-masks-conduct-march-shields_d587dd54-a322-11ea-9c65-1b2d349a0abd.jpg"  style="width:100%">
+  </div>
+</div>
+
+<script type="text/javascript">
+function toggleSidebar(ref){
+document.getElementById("sidebar").classList.toggle('active');
+}
+</script>
+  </body>
+</html>

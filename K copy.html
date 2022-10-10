@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Travel Kolkata</title>
+  <link rel="stylesheet" href="k.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <script type="text/javascript">
+    function updateClock() {
+      var now = new Date();
+      var dname = now.getDay(),
+        mo = now.getMonth(),
+        dnum = now.getDate(),
+        yr = now.getFullYear(),
+        hou = now.getHours(),
+        min = now.getMinutes(),
+        sec = now.getSeconds(),
+        pe = "AM";
+
+      if (hou >= 12) {
+        pe = "PM";
+      }
+      if (hou == 0) {
+        hou = 12;
+      }
+      if (hou > 12) {
+        hou = hou - 12;
+      }
+
+      Number.prototype.pad = function(digits) {
+        for (var n = this.toString(); n.length < digits; n = 0 + n);
+        return n;
+      }
+
+      var months = ["January", "February", "March", "April", "May", "June", "July", "Augest", "September", "October", "November", "December"];
+      var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+      var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
+      var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
+      for (var i = 0; i < ids.length; i++)
+        document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+    }
+
+    function initClock() {
+      updateClock();
+      window.setInterval("updateClock()", 1);
+    }
+  </script>
+</head>
+
+<body onload="initClock()">
+  <div class="container">
+    <div class="navbar">
+      <img src="Images/kolkata.jpeg" width="100px" class="logo">
+      <nav>
+        <ul>
+
+          <li><a href="Heritage.html">Heritage</a></li>
+          <li><a href="gal.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Book.html">Bookings</a></li>
+
+        </ul>
+      </nav>
+      <img src="Images/menu.png" class="menu-icon" onclick="toggleSidebar(this)">
+    </div>
+
+    <div id="sidebar">
+  <div class="toggle-btn" onclick="toggleSidebar(this)"></div>
+  <div class="list">
+    <div class="item"><a class="item" href="K.html">Home</a></div>
+    <div class="item"><a class="item" href="about.html">About</a></div>
+    <div class="item"><a class="item" href="Heritage.html">Heritage</a></div>
+    <div class="item"><a class="item" href="gal.html">Gallery</a></div>
+    <div class="item"><a class="item" href="Book.html">Bookings</a></div>
+  </div>
+</div>
+
+    <div class="row">
+      <div class="col">
+        <h1>The City Of Joy</h1>
+        <p>Kolkata, India, has been nicknamed the City of Palaces and also the City of Joy. City of Palaces comes from the numerous palatial mansions built all over the city and City of Joy comes from the lively and friendly and loving behavior of
+          all the citizens all over the places making the city more lively and enjoyable. Kolkata is currently the third-most populous city in India after Delhi and Mumbai.</p>
+      </div>
+      <!--datetime-->
+      <div class="datetime">
+        <div class="date">
+          <span id="dayname">Day</span>,
+          <span id="month">Month</span>
+          <span id="daynum">00</span>,
+          <span id="year">Year</span>
+        </div>
+        <div class="time">
+          <span id="hour">00</span>:
+          <span id="minutes">00</span>:
+          <span id="seconds">00</span>
+          <span id="period">AM</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="content">
+
+    <!-- Main Section -->
+    <div class="wrapper">
+      <div class="placerow">
+        <ul>
+          <li>
+            <div class="place-contd">
+              <img src="https://www.wbtourism.gov.in/assets/images/kolkata_pic1.jpg">
+              <div class="place-btm" style="height: 232px;">
+                <h2>Victoria Memorial</h2>
+                <p>
+                  Today the Victoria Memorial Hall is a museum having an assortment of Victoria memorabilia, British Raj paintings and other displays... </p>
+                <a href="VM.html">DISCOVER</a>
+              </div>
+            </div>
+          </li>
+          <li>
+              <div class="place-contd">
+                  <img src="https://www.wbtourism.gov.in/assets/images/kolkata_pic9.jpg">
+                  <div class="place-btm" style="height: 232px;">
+                    <h2>Birla planetarium</h2>
+                      <p>TPopularly known as Taramandal, the planetarium was inaugurated on 2 July 1963 by the then Prime Minister of India, Jawaharlal Nehru. It ...  </p>
+                      <a href="https://www.wbtourism.gov.in/destination/district/kolkata">DISCOVER</a>
+                  </div>
+              </div>
+          </li>
+          <li>
+            <div class="place-contd">
+              <img src="Images/DK.png">
+              <div class="place-btm" style="height: 234px;">
+                <h2>Dakshineswar Kali Temple</h2>
+                <p>Dakshineswar Kali Temple is a Hindu navaratna temple located at Dakshineswar. Situated on the eastern bank of the Hooghly River... </p>
+                <a href="DN.html">DISCOVER</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="place-contd">
+              <img src="Images/nl.png">
+              <div class="place-btm" style="height: 232px;">
+                <h2>National Library Kolkata</h2>
+                <p>The National Library of India on the Belvedere Estate in Alipore, Kolkata, is the largest library in India by volume, and India's library of public record... </p>
+                <a href="NL.html">DISCOVER</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="place-contd">
+              <img src="Images/Belur-Math.png">
+              <div class="place-btm" style="height: 232px;">
+                <h2>Belur Math</h2>
+                <p>Beluṛ Maṭh is the headquarters of the Ramakrishna Math and Ramakrishna Mission, founded by Swami Vivekananda, the chief disciple of Ramakrishna Paramahamsa... </p>
+                <a href="BM.html">DISCOVER</a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="place-contd">
+              <img src="Images/7.jpg">
+              <div class="place-btm" style="height: 232px;">
+                <h2>7 Wonders Park</h2>
+                <p>Now Kolkata residents can easily admire the beauty of the Taj Mahal without actually going to Agra, and take a walk amidst the Great Pyramids of Egypt without spending loads of money to travel..... </p>
+                <a href="SW.html">DISCOVER</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <h3>Travel Kolkata</h3>
+            <p></p>
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy; 2021 . designed by <span>Soumyadipta Kar</span></p>
+        </div>
+    </footer>
+<script type="text/javascript">
+function toggleSidebar(ref){
+document.getElementById("sidebar").classList.toggle('active');
+}
+</script>
+
+</body>
+
+</html>
